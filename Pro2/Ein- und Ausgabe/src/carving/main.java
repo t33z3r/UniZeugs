@@ -19,8 +19,8 @@ public class main {
 			
 			//img
 			/*
-		 	String type = "FFD8FF"
-			String trailor = "FFD900"; 
+		 	String type = "FFD8FF";
+			String tail = "FFD900"; 
 			String filetype = "jpeg"; 
 			*/
 			
