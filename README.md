@@ -1,2 +1,2 @@
 # UniStuff
-Kleines Repo für Uni-Zeugs.
+Kleines Repo für Uni-Zeugs ;)
