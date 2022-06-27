@@ -2,6 +2,7 @@ package frage6;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Map.Entry;
 
 public class BuchListe {
@@ -10,7 +11,7 @@ public class BuchListe {
 	//etwaige Sonderfälle noch nicht berücksichtigt
 	
 	//Erstellen der Hashmap für die Speicherung
-	private static HashMap<String, String> books = new HashMap<String, String>();
+	private static Map<String, String> books = new HashMap<String, String>();
 	
 	public static void main(String[] args) {
 		

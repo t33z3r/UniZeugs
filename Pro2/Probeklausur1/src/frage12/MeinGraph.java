@@ -25,6 +25,7 @@ public class MeinGraph {
 	public void addKante(int start, int ziel) {
 		Kante k = new Kante(start, ziel);
 		nachbarschaften.add(k);
+		System.out.println("Kante von " + start + " zu " + ziel + " hinzugefügt.");
 	}
 	
 	public int getAnzahlKante() {
@@ -41,6 +42,7 @@ public class MeinGraph {
 			oos = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(pfad)));
 			oos.writeObject(nachbarschaften);
 			oos.flush();
+			System.out.println("Die Datei nachbarschaften wurde in " + pfad + " abgespeichert.");
 		}
 		catch (IOException e) {
 			e.printStackTrace();
@@ -60,6 +62,7 @@ public class MeinGraph {
 		try {
 			ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream(pfad)));
 			nachbarschaften = (ArrayList<Kante>) ois.readObject();
+			System.out.println("Es wurde aus der Datei " + pfad + " gelesen.");
 		}
 		catch (Exception e) {
 			e.printStackTrace();
