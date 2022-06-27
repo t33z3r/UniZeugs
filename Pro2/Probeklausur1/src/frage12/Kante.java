@@ -2,20 +2,10 @@ package frage12;
 
 import java.io.Serializable;
 
+//erbt vom Interface Serializable
 public class Kante implements Serializable {
 	
-	//NOCH UNFERTIG!!!!
-	//KOMMENTARE UND TESTS STEHEN NOCH AUS!!!!
-	//TESTER-KLASSE FEHLT AUCH NOCH!!!
-	//Das wird in der nächsten Woche nachgeholt ;)
-	
-	public int getVon() {
-		return von;
-	}
-
-	public int getNach() {
-		return nach;
-	}
+	//Implementierung der gegebenen Methoden/Variablen
 
 	private int von = 0;
 	private int nach = 0;
@@ -24,6 +14,13 @@ public class Kante implements Serializable {
 		this.von = von;
 		this.nach = nach;
 	}
-	
+
+	public int getVon() {
+		return von;
+	}
+
+	public int getNach() {
+		return nach;
+	}	
 	
 }
